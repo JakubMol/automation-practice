@@ -21,14 +21,14 @@ namespace Automation.Practice.WebDriver
             _wait = TimeSpan.FromSeconds(wait);
         }
 
-        public IWebElement GetVisableElement(By by)
+        protected IWebElement GetVisableElement(By by)
         {
             WebDriverWait wait = new WebDriverWait(_driver, _wait);
             wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
             return wait.Until(ExpectedConditions.ElementIsVisible(by));
         }
 
-        public IWebElement GetClickableElement(By by)
+        protected IWebElement GetClickableElement(By by)
         {
             WebDriverWait wait = new WebDriverWait(_driver, _wait);
             wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
