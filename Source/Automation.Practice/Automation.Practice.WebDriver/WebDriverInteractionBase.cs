@@ -35,6 +35,11 @@ namespace Automation.Practice.WebDriver
             return wait.Until(ExpectedConditions.ElementToBeClickable(by));
         }
 
+        protected SelectElement GetSelectElement(By by)
+        {
+            return new SelectElement(_driver.FindElement(by));
+        }
+
         public void Navigate(string url)
         {
             _driver.Url = url;

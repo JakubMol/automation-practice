@@ -1,5 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace Automation.Practice.WebDriver
 {
@@ -22,6 +21,11 @@ namespace Automation.Practice.WebDriver
         {
             return GetVisableElement(by)
                     .Text;
+        }
+
+        public void Select(By by, string text)
+        {
+            GetSelectElement(by).SelectByText(text);
         }
     }
 }
