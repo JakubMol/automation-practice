@@ -45,5 +45,10 @@ namespace Automation.Practice.WebDriver
             _driver.Url = url;
             _driver.Navigate();
         }
+
+        public void Quit()
+        {
+            _driver.Quit();
+        }
     }
 }
