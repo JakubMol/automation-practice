@@ -10,4 +10,8 @@
   <ItemGroup>
     <Folder Include="UserDetails\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Faker" Version="1.2.0" />
+    <PackageReference Include="NBuilder" Version="6.1.0" />
+  </ItemGroup>
 </Project>
