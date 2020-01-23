@@ -25,7 +25,7 @@ namespace Automation.Practice.Data.UserDetails
                 .With(x => x.AddressLine2 = Faker.LocationFaker.StreetName())
                 .With(x => x.City = Faker.LocationFaker.City())
                 .With(x => x.Country = "United States")
-                .With(x => x.County = Faker.LocationFaker.City())
+                .With(x => x.County = "Alaska")
                 .With(x => x.PostCode = Faker.LocationFaker.ZipCode())
                 .Build();
         }

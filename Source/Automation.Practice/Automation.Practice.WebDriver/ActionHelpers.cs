@@ -14,7 +14,9 @@ namespace Automation.Practice.WebDriver
 
         public void SendKeys(By by, string text)
         {
-            GetClickableElement(by).SendKeys(text);
+            IWebElement element = GetClickableElement(by);
+            element.Clear();
+            element.SendKeys(text);
         }
 
         public string GetText(By by)

@@ -11,4 +11,8 @@
     <ProjectReference Include="..\Automation.Practice.WebDriver\Automation.Practice.WebDriver.csproj" />
     <ProjectReference Include="..\Automation.Practice.Data\Automation.Practice.Data.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FeaturedClothes\" />
+    <Folder Include="ItemDetails\" />
+  </ItemGroup>
 </Project>
