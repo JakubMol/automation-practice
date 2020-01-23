@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Practice", "Auto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Practice.WebDriver", "Automation.Practice.WebDriver\Automation.Practice.WebDriver.csproj", "{C008D72C-D170-4B4B-90E4-B9DC2713DED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Practice.Model", "Automation.Practice.Model\Automation.Practice.Model.csproj", "{CD958473-5299-4EE7-B044-1F307EF3C8CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{C008D72C-D170-4B4B-90E4-B9DC2713DED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C008D72C-D170-4B4B-90E4-B9DC2713DED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C008D72C-D170-4B4B-90E4-B9DC2713DED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD958473-5299-4EE7-B044-1F307EF3C8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD958473-5299-4EE7-B044-1F307EF3C8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD958473-5299-4EE7-B044-1F307EF3C8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD958473-5299-4EE7-B044-1F307EF3C8CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
