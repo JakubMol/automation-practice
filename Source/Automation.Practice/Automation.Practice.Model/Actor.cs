@@ -1,4 +1,5 @@
-﻿using Automation.Practice.WebDriver;
+﻿using Automation.Practice.Data.UserDetails;
+using Automation.Practice.WebDriver;
 
 namespace Automation.Practice.Model
 {
@@ -6,10 +7,12 @@ namespace Automation.Practice.Model
     {
         private ActionHelpers _actionHelpers;
         public string Url { get => _actionHelpers.Url; }
+        public UserDetails Details { get; }
 
         public Actor()
         {
             _actionHelpers = new ActionHelpers();
+            Details = UserDetailsBuilder.CreateNew();
         }
 
         public Actor Can(IActorAction<ActionHelpers> ability)
