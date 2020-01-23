@@ -7,4 +7,7 @@
   <ItemGroup>
     <Compile Remove="Class1.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automation.Practice.WebDriver\Automation.Practice.WebDriver.csproj" />
+  </ItemGroup>
 </Project>
