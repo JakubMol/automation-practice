@@ -24,6 +24,8 @@
     <Folder Include="Test\SignIn\" />
     <Folder Include="Test\SignIn\Feature\" />
     <Folder Include="Test\SignIn\Step\" />
+    <Folder Include="Constants\" />
+    <Folder Include="Hooks\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Test\SignIn\Feature\CanSignIn.feature">
@@ -36,5 +38,15 @@
     <Compile Update="Test\SignIn\Feature\CanSignIn.feature.cs">
       <DependentUpon>CanSignIn.feature</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="chromedriver">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automation.Practice.WebDriver\Automation.Practice.WebDriver.csproj" />
+    <ProjectReference Include="..\Automation.Practice.Model\Automation.Practice.Model.csproj" />
+    <ProjectReference Include="..\Automation.Practice.Data\Automation.Practice.Data.csproj" />
   </ItemGroup>
 </Project>
