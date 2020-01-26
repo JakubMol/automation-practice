@@ -18,22 +18,40 @@ namespace Automation.Practice.WebDriver
              * to handle additional settings and browser bindings
              */
             _driver = new ChromeDriver(AppDomain.CurrentDomain.BaseDirectory);
+            _driver.Manage()
+                .Window
+                .Maximize();
             _wait = TimeSpan.FromSeconds(wait);
         }
 
         protected IWebElement GetVisableElement(By by)
         {
             WebDriverWait wait = new WebDriverWait(_driver, _wait);
-            wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
+            try
+            {
+                wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
+            }
+            catch
+            {
+                //TODO: Log this event 
+            }
             return wait.Until(ExpectedConditions.ElementIsVisible(by));
         }
 
         protected IWebElement GetClickableElement(By by)
         {
             WebDriverWait wait = new WebDriverWait(_driver, _wait);
-            wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
+            try
+            {
+                wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
+            }
+            catch
+            {
+                //TODO: Log this event 
+            }
             return wait.Until(ExpectedConditions.ElementToBeClickable(by));
         }
+       
 
         protected SelectElement GetSelectElement(By by)
         {

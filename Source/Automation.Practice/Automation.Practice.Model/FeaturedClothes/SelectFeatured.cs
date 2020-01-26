@@ -12,7 +12,7 @@ namespace Automation.Practice.Model.FeaturedClothes
         }
         public void Execute(ActionHelpers helpers)
         {
-            helpers.Click(By.XPath($"//*[@id='homefeatured']//li[{_featuredOrder}]//*[@class='product-image-container']"));
+            helpers.Click(By.XPath($"//*[@id='homefeatured']//li[{_featuredOrder}]//*[@itemprop='name']"));
         }
     }
 }

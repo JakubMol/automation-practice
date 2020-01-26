@@ -21,7 +21,8 @@ namespace Automation.Practice.Test.CanBuyItem.Step
         {
             Actor newUser = _context.Get<Actor>(ContextKeys.Actor);
             newUser.Can(new NavigateToLandingPage())
-                .Can(new SelectFeatured());
+                .Can(new SelectFeatured())
+                .Can(new SelectFeatured()); // quick way of getting focus to an element
         }
 
         [Given("changed the color")]
@@ -50,6 +51,7 @@ namespace Automation.Practice.Test.CanBuyItem.Step
         {
             Actor newUser = _context.Get<Actor>(ContextKeys.Actor);
             newUser.Can(new ClickAddToCart())
+                .Can(new ClickProceedToCheckout())
                 .Can(new ClickProceedToCheckout())
                 .Can(new InputEmailCreate(newUser.Details.Email))
                 .Can(new Register(newUser.Details))

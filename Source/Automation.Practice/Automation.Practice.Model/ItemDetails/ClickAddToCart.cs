@@ -7,7 +7,7 @@ namespace Automation.Practice.Model.ItemDetails
     {
         public void Execute(ActionHelpers helpers)
         {
-            helpers.Click(By.XPath("//*[@id='add_to_cart']//button"));
+            helpers.Click(By.Id("add_to_cart"));
         }
     }
 }
