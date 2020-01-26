@@ -15,5 +15,6 @@
     <Folder Include="FeaturedClothes\" />
     <Folder Include="ItemDetails\" />
     <Folder Include="Register\" />
+    <Folder Include="Common\" />
   </ItemGroup>
 </Project>

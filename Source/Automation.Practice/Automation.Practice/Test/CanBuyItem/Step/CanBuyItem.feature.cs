@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Automation.Practice.Test.SignIn.Feature
+namespace Automation.Practice.Test.CanBuyItem.Step
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,7 +20,7 @@ namespace Automation.Practice.Test.SignIn.Feature
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class CanSignInFeature
+    public partial class UserCanBuyItemFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace Automation.Practice.Test.SignIn.Feature
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "CanSignIn.feature"
+#line 1 "CanBuyItem.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,7 +48,7 @@ namespace Automation.Practice.Test.SignIn.Feature
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Can sign in", "\tIn order to sign in \n\tAs a new user\n\tI want to be able to access the system", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User can buy item", "\tIn order to buy item\n\tAs a user\n\tI want to sucessfully checkout ", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,9 +63,9 @@ namespace Automation.Practice.Test.SignIn.Feature
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Can sign in")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "User can buy item")))
             {
-                global::Automation.Practice.Test.SignIn.Feature.CanSignInFeature.FeatureSetup(null);
+                global::Automation.Practice.Test.CanBuyItem.Step.UserCanBuyItemFeature.FeatureSetup(null);
             }
         }
         
@@ -89,49 +89,6 @@ namespace Automation.Practice.Test.SignIn.Feature
         public virtual void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("New user can sign in")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Can sign in")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("smoke")]
-        public virtual void NewUserCanSignIn()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "smoke"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("New user can sign in", null, new string[] {
-                        "smoke"});
-#line 7
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 8
- testRunner.Given("I am on the landing page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 9
- testRunner.When("I attempt to sign in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 10
- testRunner.Then("I can access the system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
         }
     }
 }

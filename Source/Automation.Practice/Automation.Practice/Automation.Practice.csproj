@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
+    <Compile Remove="Test\CanBuyItem\Feature\CanSignIn.feature.cs" />
+    <Compile Remove="Test\CanBuyItem\Step\CanBuyItem.feature.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Test\" />
@@ -26,8 +28,24 @@
     <Folder Include="Test\SignIn\Step\" />
     <Folder Include="Constants\" />
     <Folder Include="Hooks\" />
+    <Folder Include="Test\CanBuyItem\" />
+    <Folder Include="Test\CanBuyItem\Feature\" />
+    <Folder Include="Test\CanBuyItem\Step\" />
   </ItemGroup>
   <ItemGroup>
+    <SpecFlowFeatureFiles Update="Test\CanBuyItem\Feature\CanBuyItem.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CanBuyItem.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Test\CanBuyItem\Feature\CanSignIn.feature">
+      <Visible>False</Visible>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Test\CanBuyItem\Step\CanBuyItem.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CanBuyItem.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
     <SpecFlowFeatureFiles Update="Test\SignIn\Feature\CanSignIn.feature">
       <Visible>False</Visible>
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -35,6 +53,9 @@
     </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Test\CanBuyItem\Feature\CanBuyItem.feature.cs">
+      <DependentUpon>CanBuyItem.feature</DependentUpon>
+    </Compile>
     <Compile Update="Test\SignIn\Feature\CanSignIn.feature.cs">
       <DependentUpon>CanSignIn.feature</DependentUpon>
     </Compile>

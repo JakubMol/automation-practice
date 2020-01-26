@@ -1,5 +1,4 @@
-﻿using System;
-using Automation.Practice.Data.UserDetails;
+﻿using Automation.Practice.Data.UserDetails;
 using Automation.Practice.WebDriver;
 using OpenQA.Selenium;
 

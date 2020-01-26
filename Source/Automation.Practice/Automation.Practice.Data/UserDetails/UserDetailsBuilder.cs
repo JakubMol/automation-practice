@@ -12,7 +12,7 @@ namespace Automation.Practice.Data.UserDetails
                 .With(x => x.FirstName = Faker.NameFaker.FirstName())
                 .With(x => x.LastName = Faker.NameFaker.LastName())
                 .With(x => x.Password = $"{Faker.CompanyFaker.Name()}{Faker.NumberFaker.Number()}")
-                .With(x => x.Email = $"{Faker.NumberFaker.Number()}{Faker.NameFaker.FirstName()}")
+                .With(x => x.Email = $"{Faker.NumberFaker.Number()}{Faker.InternetFaker.Email()}")
                 .With(x => x.PhoneNumber = Faker.PhoneFaker.Phone())
                 .Build();
         }

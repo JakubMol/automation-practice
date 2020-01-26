@@ -22,7 +22,7 @@ namespace Automation.Practice.Hooks
             }
             catch
             {
-                // This should be logged
+                //TODO: This should be logged
                 _context.Pending();
             }
         }
@@ -37,7 +37,7 @@ namespace Automation.Practice.Hooks
             }
             catch
             {
-                // This should be logged
+                //TODO: This should be logged
                 _context.Pending();
             }
         }
