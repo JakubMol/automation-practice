@@ -13,7 +13,7 @@ namespace Automation.Practice.Model.ItemDetails
         }
         public void Execute(ActionHelpers helpers)
         {
-            helpers.Select(By.Id("group_1"), _size.ToString());
+            helpers.Select(By.XPath("//*[@id='group_1']"), _size.ToString());
         }
     }
 }
