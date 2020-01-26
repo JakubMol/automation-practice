@@ -16,5 +16,6 @@
     <Folder Include="ItemDetails\" />
     <Folder Include="Register\" />
     <Folder Include="Common\" />
+    <Folder Include="Checkout\" />
   </ItemGroup>
 </Project>

@@ -58,6 +58,11 @@ namespace Automation.Practice.WebDriver
             return new SelectElement(_driver.FindElement(by));
         }
 
+        public void Submit(By by)
+        {
+            _driver.FindElement(by).Submit();
+        }
+
         public void Navigate(string url)
         {
             _driver.Url = url;

@@ -7,7 +7,7 @@ namespace Automation.Practice.Model.Common
     {
         public void Execute(ActionHelpers helpers)
         {
-            helpers.Click(By.XPath("//*[@title='Log in to your customer account']"));
+            helpers.Click(By.XPath("//*[@title='Log me out']"));
         }
     }
 }
